@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valuation Services - Finathle</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e40af",
+                        secondary: "#0ea5e9",
+                    },
+                    borderRadius: {
+                        none: "0px",
+                        sm: "4px",
+                        DEFAULT: "8px",
+                        md: "12px",
+                        lg: "16px",
+                        xl: "20px",
+                        "2xl": "24px",
+                        "3xl": "32px",
+                        full: "9999px",
+                        button: "8px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: none;
+        }
+    </style>
+</head>
+
+<body class="bg-white font-['Roboto']">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="px-4 sm:px-6 py-4">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <div>
+                    <a href="./index.html">
+                        <img src="./Image/logo.png" alt="Finathle Logo" class="h-8 sm:h-12">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                    <a href="./index.html" class="text-gray-700 hover:text-primary transition-colors text-base">Home</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary transition-colors flex items-center text-base">
+                            About
+                            <div class="w-4 h-4 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-down-s-line text-sm"></i>
+                            </div>
+                        </button>
+                        <div
+                            class="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+                            <a href="./company.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Company</a>
+                            <a href="./leaders.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Leaders</a>
+                            <a href="./life@finathle.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Life @Finathle</a>
+                            <a href="./corporate-events.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Corporate Events</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Webinar
+                                Series</a>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary transition-colors flex items-center text-base">
+                            Services
+                            <div class="w-4 h-4 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-down-s-line text-sm"></i>
+                            </div>
+                        </button>
+                        <div
+                            class="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+                            <a href="./debt-syndication.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Debt Syndication</a>
+                            <a href="./private-equity.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Private Equity</a>
+                            <a href="./financial-advisory.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Financial Advisory
+                                Services</a>
+                            <a href="./valuation-services.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Valuation Services</a>
+                            <a href="./tev-study.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">TEV Study & LIE
+                                Report</a>
+                            <a href="./training.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Training</a>
+                            <a href="./research.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Research</a>
+                            <a href="./retail-loan-syndication.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Retail Loan
+                                Syndication</a>
+                            <a href="./esg-advisory.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">ESG Advisory Services</a>
+                            <a href="./credit-assessment.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Credit Assessment</a>
+                            <a href="./insolvency.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Insolvency</a>
+                            <a href="./credit-rating-advisory.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Credit Rating
+                                Advisory</a>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors text-base">Tenders</a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors text-base">Investment</a>
+                    <a href="./emi-calculator.html"
+                        class="text-gray-700 hover:text-primary transition-colors text-base">EMI Calculator</a>
+                    <a href="./contact.html"
+                        class="text-gray-700 hover:text-primary transition-colors text-base">Contact</a>
+                </div>
+                <button
+                    class="bg-primary text-white px-4 sm:px-6 py-2 !rounded-button hover:bg-blue-700 transition-colors whitespace-nowrap text-sm sm:text-base">
+                    Get Started
+                </button>
+                <button class="md:hidden w-8 h-8 flex items-center justify-center mobile-menu-toggle">
+                    <i class="ri-menu-line text-xl"></i>
+                </button>
+            </div>
+            <div
+                class="mobile-menu hidden md:hidden bg-white shadow-lg mt-2 rounded-lg p-4 absolute w-full left-0 z-40">
+                <div class="flex flex-col space-y-4">
+                    <a href="./index.html" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                    <div>
+                        <button
+                            class="text-gray-700 hover:text-primary transition-colors flex items-center w-full text-left dropdown-toggle">
+                            About
+                            <div class="w-4 h-4 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-down-s-line text-sm"></i>
+                            </div>
+                        </button>
+                        <div class="dropdown-menu hidden pl-4 pt-2 space-y-2">
+                            <a href="./company.html" class="block text-gray-700 hover:text-primary">Company</a>
+                            <a href="./leaders.html" class="block text-gray-700 hover:text-primary">Leaders</a>
+                            <a href="./life@finathle.html" class="block text-gray-700 hover:text-primary">Life
+                                @Finathle</a>
+                            <a href="./corporate-events.html" class="block text-gray-700 hover:text-primary">Corporate
+                                Events</a>
+                            <a href="#" class="block text-gray-700 hover:text-primary">Webinar Series</a>
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            class="text-gray-700 hover:text-primary transition-colors flex items-center w-full text-left dropdown-toggle">
+                            Services
+                            <div class="w-4 h-4 flex items-center justify-center ml-1">
+                                <i class="ri-arrow-down-s-line text-sm"></i>
+                            </div>
+                        </button>
+                        <div class="dropdown-menu hidden pl-4 pt-2 space-y-2">
+                            <a href="./debt-syndication.html" class="block text-gray-700 hover:text-primary">Debt
+                                Syndication</a>
+                            <a href="./private-equity.html" class="block text-gray-700 hover:text-primary">Private
+                                Equity</a>
+                            <a href="./financial-advisory.html" class="block text-gray-700 hover:text-primary">Financial
+                                Advisory Services</a>
+                            <a href="./valuation-services.html" class="block text-gray-700 hover:text-primary">Valuation
+                                Services</a>
+                            <a href="./tev-study.html" class="block text-gray-700 hover:text-primary">TEV Study & LIE
+                                Report</a>
+                            <a href="./training.html" class="block text-gray-700 hover:text-primary">Training</a>
+                            <a href="./research.html" class="block text-gray-700 hover:text-primary">Research</a>
+                            <a href="./retail-loan-syndication.html"
+                                class="block text-gray-700 hover:text-primary">Retail Loan Syndication</a>
+                            <a href="./esg-advisory.html" class="block text-gray-700 hover:text-primary">ESG Advisory
+                                Services</a>
+                            <a href="./credit-assessment.html" class="block text-gray-700 hover:text-primary">Credit
+                                Assessment</a>
+                            <a href="./insolvency.html" class="block text-gray-700 hover:text-primary">Insolvency</a>
+                            <a href="./credit-rating-advisory.html"
+                                class="block text-gray-700 hover:text-primary">Credit Rating Advisory</a>
+                        </div>
+                    </div>
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Tenders</a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Investment</a>
+                    <a href="./emi-calculator.html" class="text-gray-700 hover:text-primary transition-colors">EMI
+                        Calculator</a>
+                    <a href="./contact.html" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative h-[500px] flex items-center"
+            style="background-image: url('./Image/13.jpg'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent"></div>
+            <div class="relative w-full px-6">
+                <div class="max-w-7xl mx-auto">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                        Valuation Services
+                    </h1>
+                    <p class="text-xl text-gray-600 max-w-3xl">
+                        Determine the true value of your business with our expert valuation services, tailored to
+                        support strategic decision-making and growth.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                        Expert Valuation Services
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-3xl">
+                        Our valuation services provide accurate and reliable assessments of business and asset value,
+                        enabling informed decisions for mergers, acquisitions, and strategic planning.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="ri-calculator-line text-xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">
+                            Business Valuation
+                        </h3>
+                        <p class="text-gray-600">
+                            Accurate assessments of business worth for strategic decisions.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                        <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="ri-bank-line text-xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">
+                            Asset Valuation
+                        </h3>
+                        <p class="text-gray-600">
+                            Comprehensive valuation of tangible and intangible assets.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="ri-scales-line text-xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">
+                            Fairness Opinions
+                        </h3>
+                        <p class="text-gray-600">
+                            Independent evaluations for mergers and acquisitions.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                        <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="ri-shield-check-line text-xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">
+                            Regulatory Compliance
+                        </h3>
+                        <p class="text-gray-600">
+                            Ensure adherence to financial reporting standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="md:flex items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="https://readdy.ai/api/search-image?query=Valuation%20process%20infographic%2C%20flowchart%20of%20business%20valuation%20steps%2C%20professional%20business%20diagram%2C%20modern%20financial%20visualization%2C%20clean%20and%20minimalist%20design&width=600&height=400&seq=vs-diagram001&orientation=landscape"
+                            alt="Valuation Process" class="w-full h-auto rounded-xl shadow-sm" />
+                    </div>
+                    <div class="md:w-1/2 md:pl-12">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                            Our Valuation Process
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Our structured valuation process ensures precise and actionable insights, from data
+                            collection to comprehensive reporting.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                                    <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <span class="text-gray-600">Data Collection</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                                    <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <span class="text-gray-600">Analysis</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                                    <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <span class="text-gray-600">Valuation Modeling</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                                    <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <span class="text-gray-600">Reporting</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-primary">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Ready to Assess Your Business Value?
+                </h2>
+                <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Partner with Finathle to unlock precise valuation insights that drive strategic decisions. Schedule
+                    a consultation today to get started.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button
+                        class="bg-white text-primary px-8 py-4 !rounded-button hover:bg-gray-50 transition-colors text-lg font-semibold whitespace-nowrap">
+                        Schedule Free Consultation
+                    </button>
+                    <button
+                        class="border-2 border-white text-white px-8 py-4 !rounded-button hover:bg-white hover:text-primary transition-colors text-lg font-semibold whitespace-nowrap">
+                        Contact Our Team
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div>
+                        <a href="./index.html">
+                            <img src="./Image/logo.png" alt="Finathle Logo" class="h-8 sm:h-12">
+                        </a>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Your trusted partner for comprehensive financial advisory services
+                        and strategic investment solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
+                            <i class="ri-linkedin-fill text-lg"></i>
+                        </div>
+                        <div
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
+                            <i class="ri-twitter-fill text-lg"></i>
+                        </div>
+                        <div
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
+                            <i class="ri-facebook-fill text-lg"></i>
+                        </div>
+                        <div
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
+                            <i class="ri-youtube-fill text-lg"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="debt-syndication.html"
+                                class="text-gray-400 hover:text-white transition-colors">Debt Syndication</a>
+                        </li>
+                        <li>
+                            <a href="private-equity.html"
+                                class="text-gray-400 hover:text-white transition-colors">Private Equity</a>
+                        </li>
+                        <li>
+                            <a href="financial-advisory.html"
+                                class="text-gray-400 hover:text-white transition-colors">Financial Advisory Services</a>
+                        </li>
+                        <li>
+                            <a href="valuation-services.html"
+                                class="text-gray-400 hover:text-white transition-colors">Valuation Services</a>
+                        </li>
+                        <li>
+                            <a href="tev-study.html" class="text-gray-400 hover:text-white transition-colors">TEV Study
+                                & LIE Report</a>
+                        </li>
+                        <li>
+                            <a href="training.html"
+                                class="text-gray-400 hover:text-white transition-colors">Training</a>
+                        </li>
+                        <li>
+                            <a href="research.html"
+                                class="text-gray-400 hover:text-white transition-colors">Research</a>
+                        </li>
+                        <li>
+                            <a href="retail-loan-syndication.html"
+                                class="text-gray-400 hover:text-white transition-colors">Retail Loan Syndication</a>
+                        </li>
+                        <li>
+                            <a href="esg-advisory.html" class="text-gray-400 hover:text-white transition-colors">ESG
+                                Advisory Services</a>
+                        </li>
+                        <li>
+                            <a href="credit-assessment.html"
+                                class="text-gray-400 hover:text-white transition-colors">Credit Assessment</a>
+                        </li>
+                        <li>
+                            <a href="insolvency.html"
+                                class="text-gray-400 hover:text-white transition-colors">Insolvency</a>
+                        </li>
+                        <li>
+                            <a href="credit-rating-advisory.html"
+                                class="text-gray-400 hover:text-white transition-colors">Credit Rating Advisory</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Company</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Our Team</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">News & Insights</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-3">
+                                <i class="ri-map-pin-line text-gray-400"></i>
+                            </div>
+                            <div class="text-gray-400">
+                                <div>123 Financial District</div>
+                                <div>New York, NY 10004</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-phone-line text-gray-400"></i>
+                            </div>
+                            <div class="text-gray-400">+1 (555) 123-4567</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-mail-line text-gray-400"></i>
+                            </div>
+                            <div class="text-gray-400">info@finathle.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-400 mb-4 md:mb-0">
+                        © 2025 Finathle. All rights reserved.
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script id="navigation">
+        document.addEventListener("DOMContentLoaded", function () {
+            // Desktop dropdown menu handling
+            const dropdownTriggers = document.querySelectorAll(".group button");
+            const dropdownMenus = document.querySelectorAll(".group .absolute");
+
+            dropdownTriggers.forEach((trigger, index) => {
+                const dropdownMenu = dropdownMenus[index];
+                let isOpen = false;
+
+                trigger.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    isOpen = !isOpen;
+                    if (isOpen) {
+                        dropdownMenu.classList.remove("opacity-0", "invisible");
+                        dropdownMenu.classList.add("opacity-100", "visible");
+                    } else {
+                        dropdownMenu.classList.remove("opacity-100", "visible");
+                        dropdownMenu.classList.add("opacity-0", "invisible");
+                    }
+                });
+
+                document.addEventListener("click", function (e) {
+                    if (!trigger.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                        isOpen = false;
+                        dropdownMenu.classList.remove("opacity-100", "visible");
+                        dropdownMenu.classList.add("opacity-0", "invisible");
+                    }
+                });
+            });
+
+            // Mobile menu toggle
+            const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+            const mobileMenu = document.querySelector(".mobile-menu");
+            const mobileDropdownToggles = document.querySelectorAll(".mobile-menu .dropdown-toggle");
+            const mobileDropdownMenus = document.querySelectorAll(".mobile-menu .dropdown-menu");
+
+            mobileMenuToggle.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+                const icon = mobileMenuToggle.querySelector("i");
+                icon.classList.toggle("ri-menu-line");
+                icon.classList.toggle("ri-close-line");
+            });
+
+            mobileDropdownToggles.forEach((toggle, index) => {
+                toggle.addEventListener("click", function () {
+                    const menu = mobileDropdownMenus[index];
+                    menu.classList.toggle("hidden");
+                    const icon = toggle.querySelector("i");
+                    icon.classList.toggle("ri-arrow-down-s-line");
+                    icon.classList.toggle("ri-arrow-up-s-line");
+                });
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener("click", function (e) {
+                if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                    mobileMenu.classList.add("hidden");
+                    mobileMenuToggle.querySelector("i").classList.remove("ri-close-line");
+                    mobileMenuToggle.querySelector("i").classList.add("ri-menu-line");
+                    mobileDropdownMenus.forEach((menu) => {
+                        menu.classList.add("hidden");
+                        mobileDropdownToggles.forEach((toggle) => {
+                            const icon = toggle.querySelector("i");
+                            icon.classList.remove("ri-arrow-up-s-line");
+                            icon.classList.add("ri-arrow-down-s-line");
+                        });
+                    });
+                }
+            });
+
+            // Testimonial carousel
+            const track = document.querySelector(".testimonial-track");
+            const dots = document.querySelectorAll(".testimonial-dot");
+            let currentSlide = 0;
+            const totalSlides = 3;
+
+            function updateSlide(slideIndex) {
+                track.style.transform = `translateX(-${slideIndex * 100}%)`;
+                dots.forEach((dot, index) => {
+                    if (index === slideIndex) {
+                        dot.classList.remove("bg-gray-300", "hover:bg-gray-400");
+                        dot.classList.add("bg-primary");
+                    } else {
+                        dot.classList.remove("bg-primary");
+                        dot.classList.add("bg-gray-300", "hover:bg-gray-400");
+                    }
+                });
+                currentSlide = slideIndex;
+            }
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener("click", () => updateSlide(index));
+            });
+
+            setInterval(() => {
+                const nextSlide = (currentSlide + 1) % totalSlides;
+                updateSlide(nextSlide);
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>
